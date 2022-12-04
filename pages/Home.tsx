@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Home() {
+const Home = () => {
   return (
     <>
       <h1>Home</h1>
@@ -20,3 +20,5 @@ export function Home() {
     </>
   )
 }
+
+export default Home
