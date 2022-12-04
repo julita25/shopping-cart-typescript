@@ -1,12 +1,10 @@
-import React from "react";
-
 const Home = () => {
   return (
     <>
       <h1>Home</h1>
       <div style={{ background: "#C0EEE4" }}>
         <img
-          src="/imgs/grocery-bg.jpg"
+          src="/images/grocery-bg.jpg"
           style={{ height: "100%", width: "100%", objectFit: "cover" }}
         />
         <div

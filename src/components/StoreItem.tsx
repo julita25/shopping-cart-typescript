@@ -1,7 +1,7 @@
 import { Button, Card } from "react-bootstrap"
 import { BsTrash } from "react-icons/bs"
 import { useShoppingCart } from "../context/ShoppingCartContext"
-import { formatCurrency } from "../utilities/formatCurrency"
+import { formatCurrency } from "../../utilities/formatCurrency"
 
 type StoreItemProps = {
   id: number
