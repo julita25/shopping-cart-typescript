@@ -1,9 +1,14 @@
-import { Button, Container, Nav, Navbar as NavbarBs } from "react-bootstrap"
-import { NavLink } from "react-router-dom"
-import { useShoppingCart } from "../context/ShoppingCartContext"
+import {
+  Button,
+  Container,
+  Nav,
+  Navbar as NavbarBs
+} from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 const Navbar = () => {
-  const { openCart, cartQuantity } = useShoppingCart()
+  const { openCart, cartQuantity } = useShoppingCart();
   return (
     <NavbarBs sticky="top" className="navbar navbar-dark bg-primary shadow-sm mb-3" >
       <Container>
@@ -39,7 +44,7 @@ const Navbar = () => {
                 position: "absolute",
                 bottom: 0,
                 right: 0,
-                transform: "translate(25%, 25%)",
+                transform: "translate(25%, 25%)"
               }}
             >
               {cartQuantity}

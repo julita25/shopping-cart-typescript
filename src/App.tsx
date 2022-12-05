@@ -1,9 +1,9 @@
-import { Routes, Route } from "react-router-dom"
-import { Container } from "react-bootstrap"
-import Home from "../pages/Home"
-import Store from "../pages/Store"
-import Navbar from "../src/components/Navbar"
-import { ShoppingCartProvider } from "./context/ShoppingCartContext"
+import { Routes, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import Home from "../pages/Home";
+import Store from "../pages/Store";
+import Navbar from "../src/components/Navbar";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
         </Routes>
       </Container>
     </ShoppingCartProvider>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,14 +1,14 @@
-import { Button, Card } from "react-bootstrap"
-import { BsTrash } from "react-icons/bs"
-import { useShoppingCart } from "../context/ShoppingCartContext"
-import { formatCurrency } from "../../utilities/formatCurrency"
+import { Button, Card } from "react-bootstrap";
+import { BsTrash } from "react-icons/bs";
+import { useShoppingCart } from "../context/ShoppingCartContext";
+import { formatCurrency } from "../../utilities/formatCurrency";
 
 type StoreItemProps = {
   id: number
   name: string
   price: number
   imgUrl: string
-}
+};
 
 const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
   const {
@@ -16,8 +16,8 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
     increaseCartQuantity,
     decreaseCartQuantity,
     removeFromCart,
-  } = useShoppingCart()
-  const quantity = getItemQuantity(id)
+  } = useShoppingCart();
+  const quantity = getItemQuantity(id);
 
   return (
     <Card className="h-100">
@@ -64,7 +64,7 @@ const StoreItem = ({ id, name, price, imgUrl }: StoreItemProps) => {
         </div>
       </Card.Body>
     </Card>
-  )
-}
+  );
+};
 
 export default StoreItem;
